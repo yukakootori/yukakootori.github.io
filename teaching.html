@@ -11,6 +11,18 @@
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
+
+  <div id="auth-gate" hidden>
+    <div class="auth-box">
+      <h2>Yukako Otori</h2>
+      <form id="auth-form" novalidate>
+        <input type="password" id="auth-input" placeholder="Password" autocomplete="off" aria-label="Password" required>
+        <button type="submit">Enter</button>
+      </form>
+      <p id="auth-error" role="alert"></p>
+    </div>
+  </div>
+
   <a class="skip-link" href="#main-content">Skip to main content</a>
 
   <nav role="navigation" aria-label="Primary navigation">
@@ -43,7 +55,6 @@
   <main id="main-content">
     <div class="container">
 
-      <!-- Philosophy -->
       <section class="teaching-section" aria-labelledby="philosophy-heading">
         <h2 class="section-title" id="philosophy-heading">Teaching Philosophy</h2>
         <div class="philosophy-block">
@@ -62,9 +73,8 @@
         </div>
       </section>
 
-      <!-- Current: Keio -->
       <section class="teaching-section" aria-labelledby="keio-heading">
-        <h2 class="section-title" id="keio-heading">Keio University <small style="font-size:0.75em; color:var(--muted); font-family:'Source Sans 3',sans-serif;">(2024&ndash;present)</small></h2>
+        <h2 class="section-title" id="keio-heading">Keio University <small style="font-size:0.75em; color:var(--muted); font-family:'Source Sans 3',sans-serif;">(<time datetime="2024">2024</time>&ndash;present)</small></h2>
         <table class="course-table" aria-label="Courses taught at Keio University">
           <thead>
             <tr>
@@ -77,7 +87,7 @@
             <tr>
               <td>American Political and Legal History</td>
               <td>Undergraduate</td>
-              <td>Survey, Faculty of Law</td>
+              <td>Survey, Faculty of Letters</td>
             </tr>
             <tr>
               <td>Migration, Borders, and Citizenship</td>
@@ -89,16 +99,10 @@
               <td>Graduate</td>
               <td>Seminar (English)</td>
             </tr>
-            <tr>
-              <td lang="ja">アメリカ法政史</td>
-              <td>Undergraduate</td>
-              <td lang="ja">法学部、日本語</td>
-            </tr>
           </tbody>
         </table>
       </section>
 
-      <!-- TUFS -->
       <section class="teaching-section" aria-labelledby="tufs-heading">
         <h2 class="section-title" id="tufs-heading">Tokyo University of Foreign Studies (TUFS) <small style="font-size:0.75em; color:var(--muted); font-family:'Source Sans 3',sans-serif;">(<time datetime="2020">2020</time>&ndash;<time datetime="2024">2024</time>)</small></h2>
         <table class="course-table" aria-label="Courses taught at TUFS">
@@ -120,39 +124,10 @@
               <td>Undergraduate / Graduate</td>
               <td>Seminar</td>
             </tr>
-            <tr>
-              <td lang="ja">北米地域研究</td>
-              <td>Graduate</td>
-              <td lang="ja">演習</td>
-            </tr>
           </tbody>
         </table>
       </section>
 
-      <!-- Hosei -->
-      <section class="teaching-section" aria-labelledby="hosei-heading">
-        <h2 class="section-title" id="hosei-heading">Hosei University <small style="font-size:0.75em; color:var(--muted); font-family:'Source Sans 3',sans-serif;">(<time datetime="2021">2021</time>&ndash;<time datetime="2023">2023</time>)</small></h2>
-        <table class="course-table" aria-label="Courses taught at Hosei University">
-          <thead>
-            <tr>
-              <th scope="col">Course</th>
-              <th scope="col">Level</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>American Social History</td>
-              <td>Undergraduate</td>
-            </tr>
-            <tr>
-              <td lang="ja">アメリカ社会史</td>
-              <td>Undergraduate</td>
-            </tr>
-          </tbody>
-        </table>
-      </section>
-
-      <!-- Harvard -->
       <section class="teaching-section" aria-labelledby="harvard-heading">
         <h2 class="section-title" id="harvard-heading">Harvard University <small style="font-size:0.75em; color:var(--muted); font-family:'Source Sans 3',sans-serif;">(<time datetime="2015">2015</time>&ndash;<time datetime="2018">2018</time>)</small></h2>
         <table class="course-table" aria-label="Courses taught at Harvard University">
@@ -188,6 +163,7 @@
     </p>
   </footer>
 
+  <script src="assets/js/auth.js"></script>
   <script src="assets/js/nav.js"></script>
 </body>
 </html>

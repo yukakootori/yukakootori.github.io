@@ -11,6 +11,18 @@
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
+
+  <div id="auth-gate" hidden>
+    <div class="auth-box">
+      <h2>Yukako Otori</h2>
+      <form id="auth-form" novalidate>
+        <input type="password" id="auth-input" placeholder="Password" autocomplete="off" aria-label="Password" required>
+        <button type="submit">Enter</button>
+      </form>
+      <p id="auth-error" role="alert"></p>
+    </div>
+  </div>
+
   <a class="skip-link" href="#main-content">Skip to main content</a>
 
   <nav role="navigation" aria-label="Primary navigation">
@@ -43,7 +55,6 @@
   <main id="main-content">
     <div class="container">
 
-      <!-- Download bar -->
       <div class="cv-download-bar" role="complementary" aria-label="CV download">
         <p style="font-size:0.9rem; color:var(--muted);">
           A PDF version of the full CV is available for download.
@@ -59,7 +70,7 @@
         <div class="cv-entry">
           <span class="cv-year"><time datetime="2024">2024</time>&ndash;</span>
           <div class="cv-detail">
-            <strong>Associate Professor</strong>, Faculty of Law<br>
+            <strong>Associate Professor</strong>, Faculty of Letters<br>
             <em>Keio University, Tokyo</em>
           </div>
         </div>
@@ -67,16 +78,29 @@
         <div class="cv-entry">
           <span class="cv-year"><time datetime="2020">2020</time>&ndash;<time datetime="2024">2024</time></span>
           <div class="cv-detail">
-            <strong>Lecturer</strong> (Adjunct)<br>
+            <strong>Lecturer</strong><br>
             <em>Tokyo University of Foreign Studies (TUFS)</em>
+          </div>
+        </div>
+      </section>
+
+      <!-- Fellowships -->
+      <section class="cv-section" aria-labelledby="cv-fellowships">
+        <h2 id="cv-fellowships">Fellowships</h2>
+
+        <div class="cv-entry">
+          <span class="cv-year"><time datetime="2016">2016</time>&ndash;<time datetime="2017">2017</time></span>
+          <div class="cv-detail">
+            <strong>Junior Fellow</strong><br>
+            <em>The Graduate Institute, Geneva</em>
           </div>
         </div>
 
         <div class="cv-entry">
-          <span class="cv-year"><time datetime="2021">2021</time>&ndash;<time datetime="2023">2023</time></span>
+          <span class="cv-year"></span>
           <div class="cv-detail">
-            <strong>Lecturer</strong> (Part-time)<br>
-            <em>Hosei University, Tokyo</em>
+            <strong>Fellow</strong><br>
+            <em>Harvard Center for European Studies, Harvard University</em>
           </div>
         </div>
       </section>
@@ -86,7 +110,7 @@
         <h2 id="cv-edu">Education</h2>
 
         <div class="cv-entry">
-          <span class="cv-year">Ph.D. <time datetime="2021">2021</time></span>
+          <span class="cv-year">Ph.D. <time datetime="2022">2022</time></span>
           <div class="cv-detail">
             <strong>Harvard University</strong><br>
             <em>Department of History</em><br>
@@ -106,14 +130,28 @@
           <span class="cv-year">B.A.</span>
           <div class="cv-detail">
             <strong>Keio University</strong><br>
-            <em>Faculty of Law</em>
+            <em>Faculty of Letters</em>
           </div>
         </div>
       </section>
 
       <!-- Publications -->
       <section class="cv-section" aria-labelledby="cv-pub">
-        <h2 id="cv-pub">Selected Publications</h2>
+        <h2 id="cv-pub">Publications</h2>
+
+        <div class="cv-entry">
+          <span class="cv-year"><time datetime="2025">2025</time></span>
+          <div class="cv-detail">
+            <p>&ldquo;America&rsquo;s Foreign-Born Citizens: Disability and the Politics of Child Exclusion.&rdquo; <em>Journal of American Ethnic History</em>, vol. 44, no. 4, pp. 14&ndash;43.</p>
+          </div>
+        </div>
+
+        <div class="cv-entry">
+          <span class="cv-year"><time datetime="2023">2023</time></span>
+          <div class="cv-detail">
+            <p lang="ja">「UAMsの創出：1907年移民法と「保護者帯同の原則」の法制化」<em>Year Book American Studies</em>、第57号。</p>
+          </div>
+        </div>
 
         <div class="cv-entry">
           <span class="cv-year"><time datetime="2019">2019</time></span>
@@ -128,25 +166,19 @@
             <p>&ldquo;Infant Deaths and Administrative Knowledge: The U.S. Bureau of Immigration and the Making of Vital Statistics at the Border.&rdquo; <em>Journal of the History of Medicine and Allied Sciences</em>.</p>
           </div>
         </div>
+      </section>
 
-        <div class="cv-entry">
-          <span class="cv-year"><time datetime="2022">2022</time></span>
-          <div class="cv-detail">
-            <p lang="ja">「移民・子ども・国境——アメリカ移民行政史の新地平」『アメリカ史研究』。</p>
-          </div>
-        </div>
+      <!-- Awards -->
+      <section class="cv-section" aria-labelledby="cv-awards">
+        <h2 id="cv-awards">Awards &amp; Grants</h2>
 
         <div class="cv-entry">
           <span class="cv-year"><time datetime="2023">2023</time></span>
           <div class="cv-detail">
-            <p lang="ja">「進歩主義時代の国境管理と子ども保護——「後見原理」の形成をめぐって」『社会科学』。</p>
+            <strong>Harry Schreiber Fellowship</strong><br>
+            <em>American Society for Legal History</em>
           </div>
         </div>
-      </section>
-
-      <!-- Fellowships & Awards -->
-      <section class="cv-section" aria-labelledby="cv-awards">
-        <h2 id="cv-awards">Fellowships &amp; Awards</h2>
 
         <div class="cv-entry">
           <span class="cv-year"><time datetime="2022">2022</time></span>
@@ -157,18 +189,10 @@
         </div>
 
         <div class="cv-entry">
-          <span class="cv-year">Fellow</span>
+          <span class="cv-year"><time datetime="2022">2022</time></span>
           <div class="cv-detail">
-            <strong>Harvard Center for European Studies</strong><br>
-            <em>Harvard University</em>
-          </div>
-        </div>
-
-        <div class="cv-entry">
-          <span class="cv-year">Member</span>
-          <div class="cv-detail">
-            <strong>History of International Organizations Network (HION)</strong><br>
-            <em>The Graduate Institute, Geneva</em>
+            <strong>Littleton-Griswold Research Grant</strong><br>
+            <em>American Historical Association</em>
           </div>
         </div>
       </section>
@@ -180,7 +204,7 @@
         <div class="cv-entry">
           <span class="cv-year"><time datetime="2024">2024</time>&ndash;</span>
           <div class="cv-detail">
-            <strong>Keio University</strong> — Associate Professor<br>
+            <strong>Keio University</strong> — Associate Professor, Faculty of Letters<br>
             <em>American Political and Legal History; Migration, Borders, and Citizenship; History of Childhood and Youth</em>
           </div>
         </div>
@@ -190,14 +214,6 @@
           <div class="cv-detail">
             <strong>Tokyo University of Foreign Studies (TUFS)</strong><br>
             <em>North American History; History of International Migration</em>
-          </div>
-        </div>
-
-        <div class="cv-entry">
-          <span class="cv-year"><time datetime="2021">2021</time>&ndash;<time datetime="2023">2023</time></span>
-          <div class="cv-detail">
-            <strong>Hosei University</strong><br>
-            <em>American Social History</em>
           </div>
         </div>
 
@@ -212,13 +228,21 @@
 
       <!-- Service -->
       <section class="cv-section" aria-labelledby="cv-service">
-        <h2 id="cv-service">Professional Service</h2>
+        <h2 id="cv-service">Professional Service &amp; Affiliations</h2>
 
         <div class="cv-entry">
           <span class="cv-year">Current</span>
           <div class="cv-detail">
             <strong>Affiliate Researcher</strong><br>
             <em>Child Labour and Poverty Network (CLPN), Queen Mary University of London</em>
+          </div>
+        </div>
+
+        <div class="cv-entry">
+          <span class="cv-year">Current</span>
+          <div class="cv-detail">
+            <strong>Member</strong><br>
+            <em>History of International Organizations Network (HION), The Graduate Institute Geneva</em>
           </div>
         </div>
 
@@ -251,6 +275,7 @@
     </p>
   </footer>
 
+  <script src="assets/js/auth.js"></script>
   <script src="assets/js/nav.js"></script>
 </body>
 </html>

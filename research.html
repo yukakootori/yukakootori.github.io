@@ -11,6 +11,18 @@
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
+
+  <div id="auth-gate" hidden>
+    <div class="auth-box">
+      <h2>Yukako Otori</h2>
+      <form id="auth-form" novalidate>
+        <input type="password" id="auth-input" placeholder="Password" autocomplete="off" aria-label="Password" required>
+        <button type="submit">Enter</button>
+      </form>
+      <p id="auth-error" role="alert"></p>
+    </div>
+  </div>
+
   <a class="skip-link" href="#main-content">Skip to main content</a>
 
   <nav role="navigation" aria-label="Primary navigation">
@@ -43,7 +55,6 @@
   <main id="main-content">
     <div class="container">
 
-      <!-- Book Project -->
       <section class="research-section" aria-labelledby="book-heading">
         <h2 class="section-title" id="book-heading">Book Project</h2>
         <div class="book-card">
@@ -73,7 +84,6 @@
         </div>
       </section>
 
-      <!-- Research Interests -->
       <section class="research-section" aria-labelledby="interests-heading">
         <h2 class="section-title" id="interests-heading">Research Interests</h2>
         <ul class="interests-list" role="list">
@@ -87,10 +97,10 @@
           <li>International Organizations</li>
           <li>Administrative History</li>
           <li>Race &amp; Citizenship</li>
+          <li>Disability &amp; Immigration Law</li>
         </ul>
       </section>
 
-      <!-- Network Affiliations -->
       <section class="research-section" aria-labelledby="networks-heading">
         <h2 class="section-title" id="networks-heading">Network Affiliations</h2>
         <div class="network-grid">
@@ -111,13 +121,16 @@
             <span>Member</span>
           </div>
           <div class="network-card">
+            <strong>American Society for Legal History (ASLH)</strong>
+            <span>Member</span>
+          </div>
+          <div class="network-card">
             <strong>Organization of American Historians (OAH)</strong>
             <span>Member</span>
           </div>
         </div>
       </section>
 
-      <!-- Archival Work -->
       <section class="research-section" aria-labelledby="archives-heading">
         <h2 class="section-title" id="archives-heading">Archival Research</h2>
         <p>
@@ -137,6 +150,7 @@
     </p>
   </footer>
 
+  <script src="assets/js/auth.js"></script>
   <script src="assets/js/nav.js"></script>
 </body>
 </html>

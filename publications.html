@@ -11,6 +11,18 @@
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
+
+  <div id="auth-gate" hidden>
+    <div class="auth-box">
+      <h2>Yukako Otori</h2>
+      <form id="auth-form" novalidate>
+        <input type="password" id="auth-input" placeholder="Password" autocomplete="off" aria-label="Password" required>
+        <button type="submit">Enter</button>
+      </form>
+      <p id="auth-error" role="alert"></p>
+    </div>
+  </div>
+
   <a class="skip-link" href="#main-content">Skip to main content</a>
 
   <nav role="navigation" aria-label="Primary navigation">
@@ -47,19 +59,25 @@
       <section class="pub-section" aria-labelledby="en-heading">
         <span class="pub-lang-label en" id="en-heading">English</span>
 
-        <h2 class="section-title" style="margin-top:0.5rem">Journal Articles &amp; Book Chapters</h2>
+        <h2 class="section-title" style="margin-top:0.5rem">Journal Articles</h2>
         <ul class="pub-list" role="list">
 
           <li class="pub-item">
             <p class="pub-authors">Otori, Yukako.</p>
+            <p class="pub-title">&ldquo;America&rsquo;s Foreign-Born Citizens: Disability and the Politics of Child Exclusion.&rdquo;</p>
+            <p class="pub-venue"><em>Journal of American Ethnic History</em>, vol. 44, no. 4, pp. 14&ndash;43. <time datetime="2025">2025</time>.</p>
+          </li>
+
+          <li class="pub-item">
+            <p class="pub-authors">Otori, Yukako.</p>
             <p class="pub-title">&ldquo;The Wilsonian Border: Immigration Enforcement and International Law at the U.S. Land Border during the First World War.&rdquo;</p>
-            <p class="pub-venue"><em>Journal of Policy History</em>, <time datetime="2019">2019</time>.</p>
+            <p class="pub-venue"><em>Journal of Policy History</em>. <time datetime="2019">2019</time>.</p>
           </li>
 
           <li class="pub-item">
             <p class="pub-authors">Otori, Yukako.</p>
             <p class="pub-title">&ldquo;Infant Deaths and Administrative Knowledge: The U.S. Bureau of Immigration and the Making of Vital Statistics at the Border.&rdquo;</p>
-            <p class="pub-venue"><em>Journal of the History of Medicine and Allied Sciences</em>, <time datetime="2019">2019</time>.</p>
+            <p class="pub-venue"><em>Journal of the History of Medicine and Allied Sciences</em>. <time datetime="2019">2019</time>.</p>
           </li>
 
         </ul>
@@ -86,19 +104,13 @@
       <section class="pub-section" aria-labelledby="ja-heading">
         <span class="pub-lang-label ja" id="ja-heading" lang="ja">日本語</span>
 
-        <h2 class="section-title" style="margin-top:0.5rem" lang="ja">論文・書評</h2>
+        <h2 class="section-title" style="margin-top:0.5rem" lang="ja">論文</h2>
         <ul class="pub-list" role="list">
 
           <li class="pub-item">
             <p class="pub-authors" lang="ja">大鳥 由香子。</p>
-            <p class="pub-title" lang="ja">「移民・子ども・国境——アメリカ移民行政史の新地平」</p>
-            <p class="pub-venue" lang="ja"><em>アメリカ史研究</em>, <time datetime="2022">2022</time>年。</p>
-          </li>
-
-          <li class="pub-item">
-            <p class="pub-authors" lang="ja">大鳥 由香子。</p>
-            <p class="pub-title" lang="ja">「進歩主義時代の国境管理と子ども保護——「後見原理」の形成をめぐって」</p>
-            <p class="pub-venue" lang="ja"><em>社会科学</em>, <time datetime="2023">2023</time>年。</p>
+            <p class="pub-title" lang="ja">「UAMsの創出：1907年移民法と「保護者帯同の原則」の法制化」</p>
+            <p class="pub-venue" lang="ja"><em>Year Book American Studies</em>、第57号。<time datetime="2023">2023</time>年。</p>
           </li>
 
         </ul>
@@ -106,13 +118,24 @@
 
       <!-- Awards -->
       <section class="pub-section" aria-labelledby="awards-heading">
-        <h2 class="section-title" id="awards-heading">Awards &amp; Recognition</h2>
+        <h2 class="section-title" id="awards-heading">Awards &amp; Grants</h2>
         <ul class="pub-list" role="list">
+
           <li class="pub-item">
-            <p class="pub-title">SHCY Dissertation Commendation</p>
-            <p class="pub-venue">Society for the History of Children and Youth, <time datetime="2022">2022</time>.</p>
-            <p class="pub-note">Awarded for an outstanding dissertation in the history of childhood and youth.</p>
+            <p class="pub-title">Harry Schreiber Fellowship</p>
+            <p class="pub-venue">American Society for Legal History, <time datetime="2023">2023</time>.</p>
           </li>
+
+          <li class="pub-item">
+            <p class="pub-title">Dissertation Commendation</p>
+            <p class="pub-venue">Society for the History of Children and Youth (SHCY), <time datetime="2022">2022</time>.</p>
+          </li>
+
+          <li class="pub-item">
+            <p class="pub-title">Littleton-Griswold Research Grant</p>
+            <p class="pub-venue">American Historical Association, <time datetime="2022">2022</time>.</p>
+          </li>
+
         </ul>
       </section>
 
@@ -125,6 +148,7 @@
     </p>
   </footer>
 
+  <script src="assets/js/auth.js"></script>
   <script src="assets/js/nav.js"></script>
 </body>
 </html>

@@ -11,6 +11,18 @@
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
+
+  <div id="auth-gate" hidden>
+    <div class="auth-box">
+      <h2>Yukako Otori</h2>
+      <form id="auth-form" novalidate>
+        <input type="password" id="auth-input" placeholder="Password" autocomplete="off" aria-label="Password" required>
+        <button type="submit">Enter</button>
+      </form>
+      <p id="auth-error" role="alert"></p>
+    </div>
+  </div>
+
   <a class="skip-link" href="#main-content">Skip to main content</a>
 
   <nav role="navigation" aria-label="Primary navigation">
@@ -65,11 +77,11 @@
         <div class="contact-card">
           <h3>Institutional Address</h3>
           <p lang="ja">
-            慶應義塾大学　法学部<br>
+            慶應義塾大学　文学部<br>
             〒108-8345 東京都港区三田2-15-45
           </p>
           <p>
-            Faculty of Law, Keio University<br>
+            Faculty of Letters, Keio University<br>
             2-15-45 Mita, Minato-ku<br>
             Tokyo 108-8345, Japan
           </p>
@@ -102,6 +114,7 @@
     </p>
   </footer>
 
+  <script src="assets/js/auth.js"></script>
   <script src="assets/js/nav.js"></script>
 </body>
 </html>
