@@ -85,7 +85,7 @@ nav[role="navigation"] {
 
 .nav-brand .kanji {
   font-family: 'Playfair Display', Georgia, serif;
-  font-size: 1.5rem;
+  font-size: 1.15rem;
   color: var(--crimson);
   line-height: 1;
 }
