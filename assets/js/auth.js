@@ -7,18 +7,19 @@
   if (!gate) return;
 
   if (sessionStorage.getItem('auth') === '1') {
-    gate.hidden = true;
+    gate.style.display = 'none';
     return;
   }
 
-  gate.hidden = false;
+  gate.style.display = 'flex';
   document.body.style.overflow = 'hidden';
+  input.focus();
 
   form.addEventListener('submit', function (e) {
     e.preventDefault();
     if (input.value === 'panda') {
       sessionStorage.setItem('auth', '1');
-      gate.hidden = true;
+      gate.style.display = 'none';
       document.body.style.overflow = '';
     } else {
       err.textContent = 'Incorrect password.';
